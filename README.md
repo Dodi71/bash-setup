@@ -2,37 +2,37 @@
 
 A clean, powerful Bash prompt and shell experience for your LXCs, VMs, and servers.
 
-## ✨ Features Included
+## 📦 What's Included
 
-- ⚡ **Starship prompt** (fast, customizable, beautiful)
-- 🎨 **Oh My Bash** framework
-- 🔮 **ble.sh** autosuggestions and syntax highlighting
-- 🧠 Bash completion, auto-`cd`, typo fixes
-- ✅ Sets `/bin/bash` as the default shell
-- 📁 Unified `.bashrc` config
-- 🧼 Cleans previous installs to prevent conflicts
+- ⚡ Starship prompt
+- 🎨 Oh My Bash
+- 🔮 ble.sh autosuggestions + syntax highlighting
+- 🧠 Bash completion, auto-cd, typo fix
+- ✅ Bash set as the default shell
+- 📁 Unified `.bashrc`
+- 🧼 Cleans previous installs
 
-## 🧪 Installation Steps
+---
 
-### 1. Upload & Extract
+## 🚀 One-Line Install (Just Copy & Paste)
+
+Run this in your terminal:
 
 ```bash
-tar -xzf bash-prompt-theme.tar.gz
-cd bash-prompt-theme
-./install.sh
+git clone https://github.com/Dodi71/bash-setup.git && cd bash-setup && tar -xzf bash-complete-setup.tar.gz && cd bash-complete-setup && chmod +x install.sh && ./install.sh
 ```
 
-### 2. Result
+That’s it — your new themed Bash prompt is ready!
 
-- New shell prompt with theme, icons, and real-time suggestions
-- Your old `.bashrc` will be backed up as `.bashrc.backup`
-- Bash becomes your default shell
+---
 
-## 🗂 Files
+## 🧪 What Happens
 
-- `.bashrc` — Preconfigured bashrc with all themes
-- `install.sh` — Automates installation
-- `bash-prompt-theme.tar.gz` — The complete setup package
+- Installs dependencies (Starship, Oh My Bash, ble.sh)
+- Backs up existing `.bashrc` to `.bashrc.backup`
+- Replaces `.bashrc` with a themed one
+- Reloads Bash with all enhancements
+- Applies Nerd Font–compatible prompt
 
 ---
 

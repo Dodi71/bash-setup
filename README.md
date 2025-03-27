@@ -1,35 +1,38 @@
-# 🧠 Bash Setup - Standard Shell Configuration
+# 🧠 Bash Prompt Theme Installer
 
-This repo contains a full Bash setup package for LXCs, VMs, or bare-metal systems.
+A clean, powerful Bash prompt and shell experience for your LXCs, VMs, and servers.
 
-## 📦 What's Included
-- ⚡ Starship prompt
-- 🎨 Oh My Bash
-- 🧠 Autocomplete & directory correction
-- 🔮 Real-time autosuggestions with `ble.sh`
-- 📁 A unified `.bashrc` file
-- 🛠 Sets **Bash as the default shell**
+## ✨ Features Included
 
-## 🧪 Installation
+- ⚡ **Starship prompt** (fast, customizable, beautiful)
+- 🎨 **Oh My Bash** framework
+- 🔮 **ble.sh** autosuggestions and syntax highlighting
+- 🧠 Bash completion, auto-`cd`, typo fixes
+- ✅ Sets `/bin/bash` as the default shell
+- 📁 Unified `.bashrc` config
+- 🧼 Cleans previous installs to prevent conflicts
 
-### Step 1: Clone and extract
+## 🧪 Installation Steps
+
+### 1. Upload & Extract
+
 ```bash
-git clone https://github.com/Dodi71/bash-setup.git
-cd bash-setup
-tar -xzf bash-complete-setup.tar.gz
-cd root
+tar -xzf bash-prompt-theme.tar.gz
+cd bash-prompt-theme
 ./install.sh
 ```
 
-### Step 2: Done!
-Your Bash environment will now be configured with:
-- Prompt, plugins, command suggestions
-- Backup of your previous `.bashrc` as `.bashrc.backup`
-- Sets `/bin/bash` as your default shell
+### 2. Result
 
-## 📁 Files
-- `bash-complete-setup.tar.gz` - contains the `.bashrc`
-- `install.sh` - full setup script (installs dependencies and applies configuration)
+- New shell prompt with theme, icons, and real-time suggestions
+- Your old `.bashrc` will be backed up as `.bashrc.backup`
+- Bash becomes your default shell
+
+## 🗂 Files
+
+- `.bashrc` — Preconfigured bashrc with all themes
+- `install.sh` — Automates installation
+- `bash-prompt-theme.tar.gz` — The complete setup package
 
 ---
 

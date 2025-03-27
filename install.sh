@@ -36,9 +36,13 @@ if [ -f ~/.bashrc ]; then
     cp ~/.bashrc ~/.bashrc.backup
 fi
 
-# Copy new .bashrc from current dir
+# Copy new .bashrc
 cp .bashrc ~/.bashrc
 echo "✅ .bashrc installed successfully"
+
+echo "🧹 Cleaning up extracted folder if needed..."
+cd ..
+rm -rf bash-complete-setup
 
 echo "🔄 Reloading shell configuration..."
 exec bash

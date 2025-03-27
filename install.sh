@@ -17,8 +17,17 @@ mkdir -p ~/.local/share/blesh
 mv ble-0.4.0-devel3/* ~/.local/share/blesh/
 rm -rf ble-0.4.0-devel3 ble-0.4.0-devel3.tar.xz
 
-echo "📁 Copying .bashrc to home directory..."
+echo "📁 Installing .bashrc..."
+
+# Backup existing .bashrc if it exists
+if [ -f ~/.bashrc ]; then
+    echo "🔁 Backing up existing .bashrc to ~/.bashrc.backup"
+    cp ~/.bashrc ~/.bashrc.backup
+fi
+
+# Copy new .bashrc
 cp .bashrc ~/.bashrc
+echo "✅ .bashrc installed successfully"
 
 echo "🔄 Reloading shell configuration..."
 source ~/.bashrc

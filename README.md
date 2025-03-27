@@ -8,6 +8,7 @@ This repo contains a full Bash setup package for LXCs, VMs, or bare-metal system
 - 🧠 Autocomplete & directory correction
 - 🔮 Real-time autosuggestions with `ble.sh`
 - 📁 A unified `.bashrc` file
+- 🛠 Sets **Bash as the default shell**
 
 ## 🧪 Installation
 
@@ -24,6 +25,7 @@ cd root
 Your Bash environment will now be configured with:
 - Prompt, plugins, command suggestions
 - Backup of your previous `.bashrc` as `.bashrc.backup`
+- Sets `/bin/bash` as your default shell
 
 ## 📁 Files
 - `bash-complete-setup.tar.gz` - contains the `.bashrc`

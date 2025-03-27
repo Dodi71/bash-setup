@@ -4,6 +4,9 @@ set -e
 echo "📦 Installing required packages..."
 apt update -y && apt install -y curl git bash bash-completion
 
+echo "🛠 Setting Bash as the default shell..."
+chsh -s /bin/bash "$(whoami)"
+
 echo "🚀 Installing Starship..."
 curl -sS https://starship.rs/install.sh | sh -s -- -y
 
@@ -32,4 +35,4 @@ echo "✅ .bashrc installed successfully"
 echo "🔄 Reloading shell configuration..."
 source ~/.bashrc
 
-echo "✅ Installation complete! Enjoy your new Bash environment 🎉"
+echo "✅ Installation complete! Bash is now your default shell 🎉"

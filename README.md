@@ -1,6 +1,6 @@
 # 🧠 Bash Prompt Theme Installer
 
-A clean, powerful Bash prompt and shell experience for your LXCs, VMs, and servers.
+A clean, powerful Bash prompt and shell experience for your LXCs, VMs, servers, and macOS terminal.
 
 ## 📦 What's Included
 
@@ -9,30 +9,35 @@ A clean, powerful Bash prompt and shell experience for your LXCs, VMs, and serve
 - 🔮 ble.sh autosuggestions + syntax highlighting
 - 🧠 Bash completion, auto-cd, typo fix
 - ✅ Bash set as the default shell
-- 📁 Unified `.bashrc`
+- 📁 Unified `.bashrc` or `.bash_profile` depending on platform
 - 🧼 Cleans previous installs
 
 ---
 
-## 🚀 One-Line Install (Just Copy & Paste)
+## 🧪 Installation (Linux / Proxmox / Ubuntu / Debian)
 
-Run this in your terminal:
+Run this one-liner in your shell:
 
 ```bash
-git clone https://github.com/Dodi71/bash-setup.git && cd bash-setup && tar -xzf bash-complete-setup.tar.gz && cd bash-complete-setup && chmod +x install.sh && ./install.sh
+rm -rf bash-setup && git clone https://github.com/Dodi71/bash-setup.git && cd bash-setup && tar -xzf bash-complete-setup.tar.gz && cd bash-complete-setup && chmod +x install.sh && ./install.sh
 ```
-
-That’s it — your new themed Bash prompt is ready!
 
 ---
 
-## 🧪 What Happens
+## 🍎 Installation (macOS)
 
-- Installs dependencies (Starship, Oh My Bash, ble.sh)
-- Backs up existing `.bashrc` to `.bashrc.backup`
-- Replaces `.bashrc` with a themed one
-- Reloads Bash with all enhancements
-- Applies Nerd Font–compatible prompt
+```bash
+rm -rf bash-setup && git clone https://github.com/Dodi71/bash-setup.git && cd bash-setup && tar -xzf bash-complete-setup-macos.tar.gz && cd bash-complete-setup-macos && chmod +x install-macos.sh && ./install-macos.sh
+```
+
+---
+
+## 📁 Files
+
+- `bash-complete-setup.tar.gz` — Linux-compatible archive
+- `bash-complete-setup-macos.tar.gz` — macOS-compatible archive
+- `install.sh` — Linux setup script
+- `install-macos.sh` — macOS setup script
 
 ---
 
